@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <article class="profile-card" data-testid="test-profile-card">
+        <figure class="profile-header">
+            <img 
+                src="Headshot.jpg" 
+                alt="Headshot of Emmanuella David, smiling in a professional setting" 
+                class="avatar" 
+                data-testid="test-user-avatar"
+            >
+        </figure>
+
+        <div class="profile-body">
+            <h2 data-testid="test-user-name">Emmanuella David</h2>
+            <p data-testid="test-user-bio">
+                Junior Frontend Developer passionate about building accessible web experiences. Eager to learn and grow in the world of web development, with a focus on creating inclusive digital spaces for all users.
+            </p>
+            
+            <p class="time-container">
+                <strong>Current UTC Time (ms):</strong> 
+                <span id="currentTime" data-testid="test-user-time" aria-live="polite"></span>
+            </p>
+
+            <nav class="social-links" data-testid="test-user-social-links">
+                <a href="https://github.com/Amandahartz21" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+                <a href="https://linkedin.com/in/emmanuella-david-b26070404/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+            </nav>
+
+            <div class="lists-container">
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Black-and-White Photography</li>
+                        <li>Reading</li>
+                        <li>Sight Seeing</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Disorganization</li>
+                        <li>Cold Coffee</li>
+                        <li>Late Arrivals</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+
+    <script src="script.js"></script>
+</body>
+</html>
